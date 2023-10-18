@@ -17,10 +17,17 @@ describe('helloWorld', function() {
 
 describe( 'sayHello', function (){
     it( function (){
-        expect(typeof sayHello()).toBe();
+        expect(sayHello()).toBe();
     });
     it('should return a string when called.', function (){
-        expect(typeof sayHello()).toBe("string");
+        expect(typeof sayHello("")).toBe("string");
     });
+    it('should return the string, Hello, Jane!', function (){
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
+    });
+    it('should return the string, Hello, Alex!', function (){
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    });
+
 })
 
