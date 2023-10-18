@@ -16,5 +16,14 @@ function helloWorld() {
 // refactored sayHello
 
 function sayHello(input){
-    return "Hello, " + input + "!";
+    if (input === undefined) {
+        return "Hello, World!";
+    } else if (input === true) {
+        return "Hello, World!"
+    } else if (input === false) {
+        return "Hello, World!"
+    } else {
+
+        return "Hello, " + input + "!";
+    }
 }

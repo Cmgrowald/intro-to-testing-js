@@ -14,8 +14,8 @@ describe('helloWorld', function() {
     });
 });
 
-
-describe( 'sayHello', function (){
+// Unit test for the sayHello function
+describe('sayHello',function (){
     it( function (){
         expect(sayHello()).toBe();
     });
@@ -31,6 +31,17 @@ describe( 'sayHello', function (){
     it('should return the string, Hello, Pat!', function (){
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it('should return the string, Hello, World!', function (){
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return the string, Hello, World!', function (){
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return the string, Hello, World!', function (){
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+
+
 
 })
 
