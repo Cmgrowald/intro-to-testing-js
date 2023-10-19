@@ -27,3 +27,8 @@ function sayHello(input){
         return "Hello, " + input + "!";
     }
 }
+
+function isFive(input){
+   return parseFloat(input) === 5;
+ }
+

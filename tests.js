@@ -16,8 +16,8 @@ describe('helloWorld', function() {
 
 // Unit test for the sayHello function
 describe('sayHello',function (){
-    it( function (){
-        expect(sayHello()).toBe();
+    it('Should return, "Hello, World!"', function (){
+        expect(sayHello()).toBe("Hello, World!");
     });
     it('should return a string when called.', function (){
         expect(typeof sayHello("")).toBe("string");
@@ -41,7 +41,15 @@ describe('sayHello',function (){
         expect(sayHello(false)).toBe("Hello, World!");
     });
 
+})
 
+describe( 'isFive', function (){
+    it('Should return, "true"', function (){
+        expect(isFive(5)).toBe(true);
+    });
+    it('Should return, "true"', function (){
+        expect(isFive("5")).toBe(true);
+    });
 
 })
 
